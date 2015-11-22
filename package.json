@@ -1,0 +1,44 @@
+{
+  "name": "syncatom",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "main": "syncatom.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forsigner/syncatom.git"
+  },
+  "author": {
+    "name": "forsigner",
+    "email": "forsigner@gmail.com",
+    "url": "http://www.forsigner.com"
+  },
+  "keywords": [
+    "atom",
+    "syncatom"
+  ],
+  "tag": [
+    "atom",
+    "sync",
+    "configure",
+    "syncatom"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forsigner/syncatom/issues"
+  },
+  "bin": {
+    "syncatom": "./bin/syncatom.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.23"
+  },
+  "dependencies": {
+    "archy": "^1.0.0",
+    "bluebird": "^3.0.5",
+    "commander": "^2.8.1",
+    "fs-jetpack": "^0.7.0",
+    "shelljs": "^0.5.1",
+    "userhome": "^1.0.0"
+  }
+}
