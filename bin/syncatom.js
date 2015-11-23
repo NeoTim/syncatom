@@ -24,7 +24,7 @@ Promise.promisifyAll(fs);
 var packagesPath = userhome('.atom', 'packages');
 
 program
-  .version('v1.0.0')
+  .version('v1.0.1')
   .option('-v, --version', 'display version');
 
 program
