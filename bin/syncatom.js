@@ -14,7 +14,6 @@ require('shelljs/global');
 var fs = require('fs');
 var program = require('commander');
 var userhome = require('userhome');
-var ghdownload = require('github-download');
 var archy = require('archy');
 var path = require('path');
 var jetpack = require('fs-jetpack');
