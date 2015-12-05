@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+'use strict';
 
 /*
 
@@ -18,13 +19,14 @@ var archy = require('archy');
 var path = require('path');
 var jetpack = require('fs-jetpack');
 var Promise = require('bluebird');
+var pkg = require('../package.json');
 
 Promise.promisifyAll(fs);
 
 var packagesPath = userhome('.atom', 'packages');
 
 program
-  .version('v1.0.1')
+  .version('v' + pkg.version)
   .option('-v, --version', 'display version');
 
 program
@@ -55,9 +57,7 @@ program
           })
           .forEach(function(item1) {
             if (!oldJsonData.length) {
-              return newJsonData.push({
-                name: item1
-              });
+              return newJsonData.push({name: item1});
             }
 
             var result = oldJsonData.filter(function(item2) {
@@ -65,9 +65,7 @@ program
             });
 
             if (!result.length) {
-              newJsonData.push({
-                name: item1
-              });
+              newJsonData.push({name: item1});
             }
 
           });
