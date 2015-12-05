@@ -85,6 +85,7 @@ program
           'packages/\n' +
           'projects.cson\n' +
           'snippets.cson\n' +
+          '.apmrc\n' +
           'storage/';
 
         fs.writeFileAsync(gitIgnorePath, ignoreContent);
