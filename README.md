@@ -13,7 +13,10 @@ $ npm install -g syncatom
 
 ``` bash
 $ syncatom push [reop]
+# eg: syncatom push git@github.com:forsigner/vimer-atom.git
+
 $ syncatom pull [reop]
+# eg: syncatom pull git@github.com:forsigner/vimer-atom.git
 ```
 
 ## Doing
